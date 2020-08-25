@@ -23,7 +23,7 @@ public class ServerUDP {
 				  InetAddress clientAddress = receivePacket.getAddress();
 				  int clientePuerto = receivePacket.getPort();
 				  System.out.println("Puerto del cliente: "+clientePuerto+"\n");
-				//Paquete enviado
+				//Paquete enviadoas
 				  String msg = "Mensaje desde la Laptop de Daniel";
 				  byte bufferSend[] = msg.getBytes();
 				  DatagramPacket sendPacket =  new DatagramPacket(bufferSend,bufferSend.length,clientAddress,clientePuerto);
