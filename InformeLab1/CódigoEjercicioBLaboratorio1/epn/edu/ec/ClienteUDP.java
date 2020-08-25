@@ -22,7 +22,8 @@ public class ClienteUDP {
 			byte bufferSend[] = serverAddress.getBytes();
 			DatagramPacket sendPacket =  new DatagramPacket(bufferSend,bufferSend.length,InetAddress.getByName(serverAddress),PUERTO_SERVIDOR );
 			clienteSocket.send(sendPacket);
-			
+			//Recibir nuevos
+			System.out.println("Hola");
 			//Recibir paquetes
 			byte bufferReceive[] = new byte[128];
 			DatagramPacket receivePacket = new DatagramPacket(bufferReceive, bufferReceive.length);
